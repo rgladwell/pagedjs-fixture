@@ -1,0 +1,28 @@
+@media screen {
+  body {
+    background-color: whitesmoke;
+  }
+
+  .pagedjs_page {
+    background-color: #fdfdfd;
+    margin: 2em auto;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0.5in;
+
+  @bottom-center {
+    content: Page counter(page);
+  }
+}
+
+.draft {
+  page: draft;
+}
+
+@page draft {
+  background-image: url("../images/draft-overlay.svg");
+}
